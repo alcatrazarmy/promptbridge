@@ -1,0 +1,10 @@
+{
+  "version": "2.0.0",
+  "platforms": [
+    "claude",
+    "chatgpt",
+    "gemini",
+    "cursor",
+    "ollama"
+  ]
+}
