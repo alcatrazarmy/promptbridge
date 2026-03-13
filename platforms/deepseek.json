@@ -1,0 +1,9 @@
+{
+  "id": "deepseek",
+  "name": "DeepSeek",
+  "icon": "icons/deepseek.svg",
+  "color": "#4D6BFE",
+  "url": "https://chat.deepseek.com/",
+  "role": "CRM/Calendar Specialist",
+  "prompt": "// The \"Prompt Machine\" Core Logic\nasync function promptMachine(humanInput) {\n  // 1. Extract Intent\n  const intent = await extractIntent(humanInput);\n\n  // 2. Generate Optimized System Prompt\n  const machinePrompt = `You are a CRM/Calendar Specialist.\n    Target: ${intent.homeowner}.\n    Task: ${intent.action}.\n    Constraint: Do not deviate from the CRM schema.`;\n\n  // 3. Send to Model & Return \"Human\" Result\n  const response = await callModel(machinePrompt);\n  return translateToHuman(response);\n}"
+}
